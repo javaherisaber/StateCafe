@@ -1,3 +1,8 @@
 {
-  "appName": "State Cafe"
+  "appName": "StateCafe",
+  "author": "Author",
+  "myName": "Mahdi Javaheri",
+  "coffee": "Coffee",
+  "tea": "Tea",
+  "juice": "Juice"
 }

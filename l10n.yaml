@@ -1,0 +1,5 @@
+arb-dir: l10n
+template-arb-file: intl_en.arb
+output-localization-file: app_localizations.dart
+preferred-supported-locales: en
+untranslated-messages-file: .dart_tool/flutter_gen/gen_l10n/untranslated.json

@@ -1,3 +1,8 @@
 {
-  "appName": "کافه State"
+  "appName": "کافه State",
+  "author": "مولف",
+  "myName": "مهدی جواهری",
+  "coffee": "قهوه",
+  "tea": "چای",
+  "juice": "آبمیوه"
 }
