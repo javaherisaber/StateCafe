@@ -6,7 +6,7 @@ export 'bloc.dart';
 class AppProvider extends InheritedWidget {
   final AppBloc bloc;
 
-  const AppProvider(this.bloc, {Key? key, required Widget child}): super(key: key, child: child);
+  const AppProvider(this.bloc, {super.key, required super.child});
 
   @override
   bool updateShouldNotify(InheritedWidget oldWidget) => true;

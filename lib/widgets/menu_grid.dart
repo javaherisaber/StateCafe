@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../utils/image.dart';
 
 class MenuGrid extends StatelessWidget {
-  const MenuGrid({Key? key, required this.name}) : super(key: key);
+  const MenuGrid({super.key, required this.name});
 
   final String name;
 

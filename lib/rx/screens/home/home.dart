@@ -7,7 +7,7 @@ import 'package:state_cafe/rx/themes/icons.dart';
 import 'package:touch_mouse_behavior/touch_mouse_behavior.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();

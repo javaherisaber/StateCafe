@@ -5,7 +5,7 @@ import 'package:state_cafe/widgets/menu_grid.dart';
 import '../../../base/first_class_functions.dart';
 
 class CoffeePage extends StatefulWidget {
-  const CoffeePage({Key? key}) : super(key: key);
+  const CoffeePage({super.key});
 
   @override
   State<CoffeePage> createState() => _CoffeePageState();

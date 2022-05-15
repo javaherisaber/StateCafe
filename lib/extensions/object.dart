@@ -14,7 +14,7 @@ extension ObjectExtensions<T> on T {
 extension ObjectNullableExtensions<T> on T? {
   /// Return value if not null or default otherwise
   String valueOrDefault<E>(E Function(T value) selector, {String defaultData = '-'}) {
-    return this != null ? selector(this!).toString() : defaultData;
+    return this != null ? selector(this as T).toString() : defaultData;
   }
 
   /// Throw an error if subject is null

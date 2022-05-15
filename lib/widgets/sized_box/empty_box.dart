@@ -6,10 +6,10 @@ import 'package:flutter/material.dart';
 /// when [predicate] io not of bool type is shows [child] only when it is not null
 class EmptyBox<T> extends StatelessWidget {
   const EmptyBox({
-    Key? key,
+    super.key,
     this.child,
     this.predicate,
-  }) : super(key: key);
+  });
 
   final T? predicate;
   final Widget? child;

@@ -5,7 +5,7 @@ import 'package:state_cafe/base/resourceful_state.dart';
 import '../../../widgets/menu_grid.dart';
 
 class TeaPage extends StatefulWidget {
-  const TeaPage({Key? key}) : super(key: key);
+  const TeaPage({super.key});
 
   @override
   State<TeaPage> createState() => _TeaPageState();

@@ -5,7 +5,7 @@ import 'package:state_cafe/base/resourceful_state.dart';
 import '../../../widgets/menu_grid.dart';
 
 class JuicePage extends StatefulWidget {
-  const JuicePage({Key? key}) : super(key: key);
+  const JuicePage({super.key});
 
   @override
   State<JuicePage> createState() => _JuicePageState();
