@@ -6,6 +6,8 @@ import 'package:state_cafe/rx/screens/tea/tea.dart';
 import 'package:state_cafe/rx/themes/icons.dart';
 import 'package:touch_mouse_behavior/touch_mouse_behavior.dart';
 
+import '../../../routes.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -22,6 +24,12 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text(tr.appName),
         centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(Icons.settings),
+          onPressed: () {
+            Navigator.pushNamed(context, Routes.settings);
+          },
+        ),
       ),
       body: TouchMouseScrollable(child: content()),
       bottomNavigationBar: bottomNav(),
