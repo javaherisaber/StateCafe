@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:state_cafe/base/first_class_functions.dart';
 import 'package:state_cafe/widgets/sized_box/space.dart';
 
+import '../../../routes.dart';
+
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
 
@@ -27,7 +29,7 @@ class SettingsPage extends StatelessWidget {
               const Space(height: 24),
               language(),
               const Space(height: 48),
-              logout(),
+              logout(context),
             ],
           ),
         ),
@@ -80,7 +82,12 @@ class SettingsPage extends StatelessWidget {
     );
   }
 
-  Widget logout() {
-    return OutlinedButton(onPressed: () {}, child: Text('Logout'));
+  Widget logout(BuildContext context) {
+    return OutlinedButton(
+      onPressed: () {
+        Navigator.pushNamedAndRemoveUntil(context, Routes.login, ModalRoute.withName(Routes.splash));
+      },
+      child: Text('Logout'),
+    );
   }
 }

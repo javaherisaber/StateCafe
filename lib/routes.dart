@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:state_cafe/rx/screens/login/login.dart';
 import 'package:state_cafe/rx/screens/settings/settings.dart';
 
 import 'rx/screens/home/home.dart';
@@ -11,6 +12,7 @@ abstract class Routes {
   static const home = '/home';
   static const splash = '/splash';
   static const settings = '/settings';
+  static const login = '/login';
 
   static const initialRoute = splash;
 
@@ -18,5 +20,6 @@ abstract class Routes {
     home: (context) => const HomePage(),
     splash: (context) => const SplashPage(),
     settings: (context) => const SettingsPage(),
+    login: (context) => const LoginPage(),
   };
 }
