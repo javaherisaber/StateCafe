@@ -3,7 +3,7 @@ import 'package:state_cafe/base/first_class_functions.dart';
 import 'package:state_cafe/rx/screens/coffee/coffee.dart';
 import 'package:state_cafe/rx/screens/juice/juice.dart';
 import 'package:state_cafe/rx/screens/tea/tea.dart';
-import 'package:state_cafe/rx/themes/icons.dart';
+import 'package:state_cafe/themes/icons.dart';
 import 'package:touch_mouse_behavior/touch_mouse_behavior.dart';
 
 import '../../../routes.dart';

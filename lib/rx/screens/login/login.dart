@@ -1,12 +1,42 @@
 import 'package:flutter/material.dart';
+import 'package:state_cafe/base/resourceful_state.dart';
 import 'package:state_cafe/routes.dart';
+import 'package:state_cafe/rx/screens/login/bloc.dart';
 import 'package:state_cafe/widgets/sized_box/space.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
   @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends ResourcefulState<LoginPage> {
+  late LoginBloc bloc;
+  bool _isPasswordObscure = true;
+
+  @override
+  void initState() {
+    bloc = LoginBloc();
+    listenBlocStreams();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    bloc.dispose();
+    super.dispose();
+  }
+
+  void listenBlocStreams() {
+    bloc.navigateToHome.listen((_) {
+      Navigator.pushReplacementNamed(context, Routes.home);
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Scaffold(
       appBar: AppBar(title: const Text('Login')),
       body: Center(child: content(context)),
@@ -17,19 +47,41 @@ class LoginPage extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        input('Username'),
+        username(),
         const Space(height: 16),
-        input('Password'),
+        password(),
         const Space(height: 36),
         confirm(context),
       ],
     );
   }
 
-  Widget input(String hint) {
+  Widget username() {
     return SizedBox(
       width: 300,
-      child: TextField(
+      child: TextFormField(
+        initialValue: LoginBloc.usernameDefault,
+        onChanged: bloc.onUsernameChanged,
+        decoration: const InputDecoration(
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.greenAccent, width: 5.0),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.blue, width: 5.0),
+          ),
+          labelText: 'Username',
+        ),
+      ),
+    );
+  }
+
+  Widget password() {
+    return SizedBox(
+      width: 300,
+      child: TextFormField(
+        obscureText: _isPasswordObscure,
+        initialValue: LoginBloc.passwordDefault,
+        onChanged: bloc.onPasswordChanged,
         decoration: InputDecoration(
           focusedBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: Colors.greenAccent, width: 5.0),
@@ -37,7 +89,17 @@ class LoginPage extends StatelessWidget {
           enabledBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: Colors.blue, width: 5.0),
           ),
-          hintText: hint,
+          labelText: 'Password',
+          suffixIcon: IconButton(
+            icon: Icon(
+              _isPasswordObscure ? Icons.visibility : Icons.visibility_off,
+            ),
+            onPressed: () {
+              setState(() {
+                _isPasswordObscure = !_isPasswordObscure;
+              });
+            },
+          ),
         ),
       ),
     );
@@ -48,9 +110,7 @@ class LoginPage extends StatelessWidget {
       style: const ButtonStyle(
         visualDensity: VisualDensity.standard,
       ),
-      onPressed: () {
-        Navigator.pushReplacementNamed(context, Routes.home);
-      },
+      onPressed: bloc.onLoginClick,
       child: const Text('Login'),
     );
   }

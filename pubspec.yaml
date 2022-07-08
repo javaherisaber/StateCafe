@@ -18,6 +18,9 @@ dependencies:
   flutter_svg: ^0.22.0
   need_resume: ^1.0.6
   touch_mouse_behavior: ^0.0.1
+  shared_preferences: ^2.0.15
+  live_event: ^0.0.2
+  fluttertoast: ^8.0.9
 
 dev_dependencies:
   flutter_test:

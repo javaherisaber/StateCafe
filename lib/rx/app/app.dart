@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:state_cafe/rx/themes/locale.dart';
+import 'package:state_cafe/themes/locale.dart';
 
 import '../../routes.dart';
 import 'provider.dart';
