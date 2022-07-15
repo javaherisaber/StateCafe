@@ -6,7 +6,6 @@ import 'rx/screens/home/home.dart';
 import 'rx/screens/splash/splash.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey();
-final RouteObserver<PageRoute> routeObserver = RouteObserver();
 
 abstract class Routes {
   static const home = '/home';
