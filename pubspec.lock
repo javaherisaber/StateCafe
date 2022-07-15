@@ -98,7 +98,7 @@ packages:
       name: cached_network_image
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.2.0"
+    version: "3.2.1"
   cached_network_image_platform_interface:
     dependency: transitive
     description:
@@ -336,6 +336,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.4.0"
+  lifecycle_aware_state:
+    dependency: "direct main"
+    description:
+      name: lifecycle_aware_state
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.2"
   lints:
     dependency: transitive
     description:
@@ -385,13 +392,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.1"
-  need_resume:
-    dependency: "direct main"
-    description:
-      name: need_resume
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.6"
   octo_image:
     dependency: transitive
     description:
@@ -762,5 +762,5 @@ packages:
     source: hosted
     version: "3.1.0"
 sdks:
-  dart: ">=2.17.0 <3.0.0"
-  flutter: ">=3.0.0"
+  dart: ">=2.17.6 <3.0.0"
+  flutter: ">=3.0.5"

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:lifecycle_aware_state/lifecycle_aware_state.dart';
 import 'package:state_cafe/themes/locale.dart';
 
 import '../../routes.dart';
@@ -40,7 +41,7 @@ class _AppState extends State<App> {
       supportedLocales: AppLocale.supportedLocales,
       locale: locale,
       initialRoute: Routes.initialRoute,
-      navigatorObservers: [routeObserver],
+      navigatorObservers: [LifecycleAwareState.routeObserver],
       routes: Routes.all,
     );
   }
