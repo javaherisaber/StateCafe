@@ -24,12 +24,15 @@ class _AppState extends State<App> {
 
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder(
-      stream: bloc.themeLocale,
+    return AppProvider(
+      bloc,
+      child: StreamBuilder(
+        stream: bloc.themeLocale,
         builder: (context, AsyncSnapshot<Locale> snapshot) {
           final locale = snapshot.data ?? appInitialLocale;
           return app(locale);
-        }
+        },
+      ),
     );
   }
 

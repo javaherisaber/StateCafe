@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:state_cafe/base/first_class_functions.dart';
+import 'package:state_cafe/rx/app/provider.dart';
 import 'package:state_cafe/rx/screens/settings/bloc.dart';
+import 'package:state_cafe/themes/locale.dart';
 import 'package:state_cafe/widgets/sized_box/space.dart';
 
 import '../../../routes.dart';
@@ -14,6 +16,7 @@ class SettingsPage extends StatefulWidget {
 
 class _SettingsPageState extends State<SettingsPage> {
   late SettingsBloc _bloc;
+  late AppBloc _appBloc;
 
   @override
   void initState() {
@@ -23,21 +26,29 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   void listenBlocStreams() {
-    _bloc.showLogoutAlert.listen((event) {
+    _bloc.showLogoutAlert.listen((_) {
       showDialog(context: context, builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('Are you sure?'),
-          content: Text('You are logging out of your account'),
+          title: Text(tr.areYouSure),
+          content: Text(tr.logoutMessage),
           actions: [
-            TextButton(onPressed: () => Navigator.of(context).pop(), child: Text('Cancel')),
-            TextButton(onPressed: _bloc.onLogoutAlertPositiveClick, child: Text('Ok')),
+            TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(tr.cancel)),
+            TextButton(onPressed: _bloc.onLogoutAlertPositiveClick, child: Text(tr.ok)),
           ],
         );
       });
     });
 
-    _bloc.navigateToLoginPage.listen((event) {
+    _bloc.navigateToLoginPage.listen((_) {
       Navigator.pushNamedAndRemoveUntil(context, Routes.login, ModalRoute.withName(Routes.splash));
+    });
+
+    _bloc.updateThemeLocale.listen((locale) {
+      _appBloc.changeThemeLocale(locale);
+    });
+
+    _bloc.restartApp.listen((_) {
+      Navigator.pushNamedAndRemoveUntil(context, Routes.splash, ModalRoute.withName(Routes.splash));
     });
   }
 
@@ -48,12 +59,18 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   @override
+  void didChangeDependencies() {
+    _appBloc = AppProvider.of(context);
+    super.didChangeDependencies();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Settings'),
+        title: Text(tr.settings),
       ),
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         child: SingleChildScrollView(
           child: Column(
@@ -82,14 +99,14 @@ class _SettingsPageState extends State<SettingsPage> {
       radius: 36,
       child: Container(
         color: Colors.blue,
-        child: Text('M'),
+        child: Text('A'),
       ),
     );
   }
 
   Widget username() {
     return Text(
-      'mjavaheri',
+      'admin',
       style: tp.titleLarge,
     );
   }
@@ -98,12 +115,12 @@ class _SettingsPageState extends State<SettingsPage> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text("I prefer: "),
+        Text("${tr.iPrefer}: "),
         DropdownButton(
           items: [
-            DropdownMenuItem(child: Text('Coffee'), value: 0),
-            DropdownMenuItem(child: Text('Tea'), value: 1),
-            DropdownMenuItem(child: Text('Juice'), value: 2),
+            DropdownMenuItem(value: 0, child: Text(tr.coffee)),
+            DropdownMenuItem(value: 1, child: Text(tr.tea)),
+            DropdownMenuItem(value: 2, child: Text(tr.juice)),
           ],
           onChanged: (value) {},
         ),
@@ -112,20 +129,32 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   Widget language() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        ElevatedButton(onPressed: () {}, child: Text('English')),
-        Space(width: 8),
-        TextButton(onPressed: () {}, child: Text('فارسی')),
-      ],
+    return StreamBuilder<Locale>(
+      stream: _appBloc.themeLocale,
+      builder: (context, snapshot) {
+        final languageCode = snapshot.data?.languageCode ?? appInitialLocale.languageCode;
+        return Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (languageCode == AppLocale.en.languageCode)
+              ElevatedButton(onPressed: doNothing, child: Text(tr.english)),
+            if (languageCode == AppLocale.fa.languageCode)
+              ElevatedButton(onPressed: doNothing, child: Text(tr.persian)),
+            const Space(width: 8),
+            if (languageCode == AppLocale.en.languageCode)
+              TextButton(onPressed: () => _bloc.onLanguageClick(AppLocale.fa), child: Text(tr.persian)),
+            if (languageCode == AppLocale.fa.languageCode)
+              TextButton(onPressed: () => _bloc.onLanguageClick(AppLocale.en), child: Text(tr.english)),
+          ],
+        );
+      },
     );
   }
 
   Widget logout(BuildContext context) {
     return OutlinedButton(
       onPressed: _bloc.onLogoutClick,
-      child: Text('Logout'),
+      child: Text(tr.logout),
     );
   }
 }

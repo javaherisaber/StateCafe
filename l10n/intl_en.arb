@@ -4,5 +4,18 @@
   "myName": "Mahdi Javaheri",
   "coffee": "Coffee",
   "tea": "Tea",
-  "juice": "Juice"
+  "juice": "Juice",
+  "login": "Login",
+  "loginButton": "Login",
+  "password": "Password",
+  "username": "Username",
+  "areYouSure": "Are you sure?",
+  "logoutMessage": "You are logging out of your account",
+  "cancel": "Cancel",
+  "ok": "Ok",
+  "settings": "Settings",
+  "logout": "Logout",
+  "english": "English",
+  "persian": "فارسی",
+  "iPrefer": "I prefer"
 }

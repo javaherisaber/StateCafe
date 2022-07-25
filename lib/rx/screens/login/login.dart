@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:state_cafe/base/first_class_functions.dart';
 import 'package:state_cafe/base/resourceful_state.dart';
 import 'package:state_cafe/routes.dart';
 import 'package:state_cafe/rx/screens/login/bloc.dart';
@@ -38,7 +39,7 @@ class _LoginPageState extends ResourcefulState<LoginPage> {
   Widget build(BuildContext context) {
     super.build(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Login')),
+      appBar: AppBar(title: Text(tr.login)),
       body: Center(child: content(context)),
     );
   }
@@ -62,14 +63,14 @@ class _LoginPageState extends ResourcefulState<LoginPage> {
       child: TextFormField(
         initialValue: LoginBloc.usernameDefault,
         onChanged: bloc.onUsernameChanged,
-        decoration: const InputDecoration(
-          focusedBorder: OutlineInputBorder(
+        decoration: InputDecoration(
+          focusedBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: Colors.greenAccent, width: 5.0),
           ),
-          enabledBorder: OutlineInputBorder(
+          enabledBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: Colors.blue, width: 5.0),
           ),
-          labelText: 'Username',
+          labelText: tr.username,
         ),
       ),
     );
@@ -89,7 +90,7 @@ class _LoginPageState extends ResourcefulState<LoginPage> {
           enabledBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: Colors.blue, width: 5.0),
           ),
-          labelText: 'Password',
+          labelText: tr.password,
           suffixIcon: IconButton(
             icon: Icon(
               _isPasswordObscure ? Icons.visibility : Icons.visibility_off,
@@ -111,7 +112,7 @@ class _LoginPageState extends ResourcefulState<LoginPage> {
         visualDensity: VisualDensity.standard,
       ),
       onPressed: bloc.onLoginClick,
-      child: const Text('Login'),
+      child: Text(tr.loginButton),
     );
   }
 }
