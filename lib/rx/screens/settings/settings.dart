@@ -1,11 +1,51 @@
 import 'package:flutter/material.dart';
 import 'package:state_cafe/base/first_class_functions.dart';
+import 'package:state_cafe/rx/screens/settings/bloc.dart';
 import 'package:state_cafe/widgets/sized_box/space.dart';
 
 import '../../../routes.dart';
 
-class SettingsPage extends StatelessWidget {
+class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
+
+  @override
+  State<SettingsPage> createState() => _SettingsPageState();
+}
+
+class _SettingsPageState extends State<SettingsPage> {
+  late SettingsBloc _bloc;
+
+  @override
+  void initState() {
+    _bloc = SettingsBloc();
+    listenBlocStreams();
+    super.initState();
+  }
+
+  void listenBlocStreams() {
+    _bloc.showLogoutAlert.listen((event) {
+      showDialog(context: context, builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Are you sure?'),
+          content: Text('You are logging out of your account'),
+          actions: [
+            TextButton(onPressed: () => Navigator.of(context).pop(), child: Text('Cancel')),
+            TextButton(onPressed: _bloc.onLogoutAlertPositiveClick, child: Text('Ok')),
+          ],
+        );
+      });
+    });
+
+    _bloc.navigateToLoginPage.listen((event) {
+      Navigator.pushNamedAndRemoveUntil(context, Routes.login, ModalRoute.withName(Routes.splash));
+    });
+  }
+
+  @override
+  void dispose() {
+    _bloc.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -84,9 +124,7 @@ class SettingsPage extends StatelessWidget {
 
   Widget logout(BuildContext context) {
     return OutlinedButton(
-      onPressed: () {
-        Navigator.pushNamedAndRemoveUntil(context, Routes.login, ModalRoute.withName(Routes.splash));
-      },
+      onPressed: _bloc.onLogoutClick,
       child: Text('Logout'),
     );
   }
