@@ -1,6 +1,7 @@
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:state_cafe/rx/screens/home/bottom_nav_page.dart';
 
-abstract class AppSharedPreferences {
+class AppSharedPreferences {
   static SharedPreferences? _instance;
 
   static Future<SharedPreferences> get _preference async {
@@ -21,7 +22,16 @@ abstract class AppSharedPreferences {
     (await _preference).setBool(_keyIsLoggedIn, value);
   }
 
+  static Future<String> get preferredDrink async {
+    return (await _preference).getString(_keyPreferredDrink) ?? HomeBottomNavPage.coffee.toString();
+  }
+
+  static Future<void> setPreferredDrink(String value) async {
+    (await _preference).setString(_keyPreferredDrink, value);
+  }
+
   static const _keyIsLoggedIn = 'isLoggedIn';
+  static const _keyPreferredDrink = 'preferredDrink';
 
   /// We must use non-nullable string in shared preferences, so we use 'null' to indicate as such
   static const _nullString = 'null';

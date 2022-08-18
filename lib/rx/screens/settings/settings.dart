@@ -3,6 +3,7 @@ import 'package:state_cafe/base/first_class_functions.dart';
 import 'package:state_cafe/rx/app/provider.dart';
 import 'package:state_cafe/rx/screens/settings/bloc.dart';
 import 'package:state_cafe/themes/locale.dart';
+import 'package:state_cafe/widgets/sized_box/empty_box.dart';
 import 'package:state_cafe/widgets/sized_box/space.dart';
 
 import '../../../routes.dart';
@@ -112,19 +113,33 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   Widget preferredDrink() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text("${tr.iPrefer}: "),
-        DropdownButton(
-          items: [
-            DropdownMenuItem(value: 0, child: Text(tr.coffee)),
-            DropdownMenuItem(value: 1, child: Text(tr.tea)),
-            DropdownMenuItem(value: 2, child: Text(tr.juice)),
+    return StreamBuilder<String>(
+      stream: _bloc.preferredDrink,
+      builder: (context, snapshot) {
+        final data = snapshot.data;
+        if (data == null) {
+          return const EmptyBox();
+        }
+        return Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("${tr.iPrefer}:    "),
+            DropdownButton(
+              value: data,
+              items: [
+                DropdownMenuItem(value: 'coffee', child: Text(tr.coffee)),
+                DropdownMenuItem(value: 'tea', child: Text(tr.tea)),
+                DropdownMenuItem(value: 'juice', child: Text(tr.juice)),
+              ],
+              onChanged: (String? value) {
+                if (value != null) {
+                  _bloc.onPreferredDrinkChanged(value);
+                }
+              },
+            ),
           ],
-          onChanged: (value) {},
-        ),
-      ],
+        );
+      },
     );
   }
 
