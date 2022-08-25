@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-
-import '/extensions/build_context.dart';
-import '/routes.dart';
+import 'package:state_cafe/extensions/build_context.dart';
+import 'package:state_cafe/main.dart';
 
 /// When there is no functionality for a given action eg. noOp
 void doNothing([dynamic]) {}

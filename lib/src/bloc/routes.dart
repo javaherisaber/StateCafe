@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:state_cafe/rx/screens/login/login.dart';
-import 'package:state_cafe/rx/screens/settings/settings.dart';
+import 'package:state_cafe/src/bloc/screens/home/home.dart';
+import 'package:state_cafe/src/bloc/screens/login/login.dart';
+import 'package:state_cafe/src/bloc/screens/settings/settings.dart';
+import 'package:state_cafe/src/bloc/screens/splash/splash.dart';
 
-import 'rx/screens/home/home.dart';
-import 'rx/screens/splash/splash.dart';
-
-final GlobalKey<NavigatorState> navigatorKey = GlobalKey();
-
-abstract class Routes {
+class BlocRoutes {
   static const home = '/home';
   static const splash = '/splash';
   static const settings = '/settings';

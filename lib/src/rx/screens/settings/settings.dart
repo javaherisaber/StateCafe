@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:state_cafe/base/first_class_functions.dart';
-import 'package:state_cafe/rx/app/provider.dart';
-import 'package:state_cafe/rx/screens/settings/bloc.dart';
+import 'package:state_cafe/src/rx/app/provider.dart';
+import 'package:state_cafe/src/rx/routes.dart';
+import 'package:state_cafe/src/rx/screens/settings/bloc.dart';
 import 'package:state_cafe/themes/locale.dart';
 import 'package:state_cafe/widgets/sized_box/empty_box.dart';
 import 'package:state_cafe/widgets/sized_box/space.dart';
-
-import '../../../routes.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -41,7 +40,7 @@ class _SettingsPageState extends State<SettingsPage> {
     });
 
     _bloc.navigateToLoginPage.listen((_) {
-      Navigator.pushNamedAndRemoveUntil(context, Routes.login, ModalRoute.withName(Routes.splash));
+      Navigator.pushNamedAndRemoveUntil(context, RxRoutes.login, ModalRoute.withName(RxRoutes.splash));
     });
 
     _bloc.updateThemeLocale.listen((locale) {
@@ -49,7 +48,7 @@ class _SettingsPageState extends State<SettingsPage> {
     });
 
     _bloc.restartApp.listen((_) {
-      Navigator.pushNamedAndRemoveUntil(context, Routes.splash, ModalRoute.withName(Routes.splash));
+      Navigator.pushNamedAndRemoveUntil(context, RxRoutes.splash, ModalRoute.withName(RxRoutes.splash));
     });
   }
 

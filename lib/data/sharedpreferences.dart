@@ -1,5 +1,4 @@
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:state_cafe/rx/screens/home/bottom_nav_page.dart';
 
 class AppSharedPreferences {
   static SharedPreferences? _instance;
@@ -23,7 +22,7 @@ class AppSharedPreferences {
   }
 
   static Future<String> get preferredDrink async {
-    return (await _preference).getString(_keyPreferredDrink) ?? HomeBottomNavPage.coffee.toString();
+    return (await _preference).getString(_keyPreferredDrink) ?? 'coffee';
   }
 
   static Future<void> setPreferredDrink(String value) async {

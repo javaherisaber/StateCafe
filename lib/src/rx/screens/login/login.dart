@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:state_cafe/base/first_class_functions.dart';
 import 'package:state_cafe/base/resourceful_state.dart';
-import 'package:state_cafe/routes.dart';
-import 'package:state_cafe/rx/screens/login/bloc.dart';
+import 'package:state_cafe/src/rx/routes.dart';
+import 'package:state_cafe/src/rx/screens/login/bloc.dart';
 import 'package:state_cafe/widgets/sized_box/space.dart';
 
 class LoginPage extends StatefulWidget {
@@ -31,7 +31,7 @@ class _LoginPageState extends ResourcefulState<LoginPage> {
 
   void listenBlocStreams() {
     bloc.navigateToHome.listen((_) {
-      Navigator.pushReplacementNamed(context, Routes.home);
+      Navigator.pushReplacementNamed(context, RxRoutes.home);
     });
   }
 

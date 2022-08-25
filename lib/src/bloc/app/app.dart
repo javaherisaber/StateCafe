@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:lifecycle_aware_state/lifecycle_aware_state.dart';
+import 'package:state_cafe/main.dart';
+import 'package:state_cafe/src/bloc/routes.dart';
 import 'package:state_cafe/themes/locale.dart';
-
-import '../../routes.dart';
-import 'provider.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -14,26 +13,10 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
-  late AppBloc bloc;
-
-  @override
-  void initState() {
-    super.initState();
-    bloc = AppBloc();
-  }
 
   @override
   Widget build(BuildContext context) {
-    return AppProvider(
-      bloc,
-      child: StreamBuilder(
-        stream: bloc.themeLocale,
-        builder: (context, AsyncSnapshot<Locale> snapshot) {
-          final locale = snapshot.data ?? appInitialLocale;
-          return app(locale);
-        },
-      ),
-    );
+    return app(AppLocale.defaultLocale);
   }
 
   Widget app(Locale locale) {
@@ -43,9 +26,9 @@ class _AppState extends State<App> {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocale.supportedLocales,
       locale: locale,
-      initialRoute: Routes.initialRoute,
+      initialRoute: BlocRoutes.initialRoute,
       navigatorObservers: [LifecycleAwareState.routeObserver],
-      routes: Routes.all,
+      routes: BlocRoutes.all,
     );
   }
 }

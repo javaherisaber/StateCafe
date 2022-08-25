@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:state_cafe/base/first_class_functions.dart';
-import 'package:state_cafe/rx/screens/coffee/coffee.dart';
-import 'package:state_cafe/rx/screens/home/bloc.dart';
-import 'package:state_cafe/rx/screens/home/bottom_nav_page.dart';
-import 'package:state_cafe/rx/screens/juice/juice.dart';
-import 'package:state_cafe/rx/screens/tea/tea.dart';
+import 'package:state_cafe/src/rx/routes.dart';
+import 'package:state_cafe/src/rx/screens/coffee/coffee.dart';
+import 'package:state_cafe/src/rx/screens/home/bloc.dart';
+import 'package:state_cafe/src/rx/screens/home/bottom_nav_page.dart';
+import 'package:state_cafe/src/rx/screens/juice/juice.dart';
+import 'package:state_cafe/src/rx/screens/tea/tea.dart';
 import 'package:state_cafe/themes/icons.dart';
 import 'package:state_cafe/widgets/sized_box/empty_box.dart';
 import 'package:touch_mouse_behavior/touch_mouse_behavior.dart';
-
-import '../../../routes.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -36,7 +35,7 @@ class _HomePageState extends State<HomePage> {
         leading: IconButton(
           icon: const Icon(Icons.settings),
           onPressed: () {
-            Navigator.pushNamed(context, Routes.settings);
+            Navigator.pushNamed(context, RxRoutes.settings);
           },
         ),
       ),

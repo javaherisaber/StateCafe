@@ -1,6 +1,6 @@
 import 'package:rxdart/rxdart.dart';
 import 'package:state_cafe/data/sharedpreferences.dart';
-import 'package:state_cafe/rx/screens/home/bottom_nav_page.dart';
+import 'package:state_cafe/src/rx/screens/home/bottom_nav_page.dart';
 
 class HomeBloc {
   HomeBloc() {
