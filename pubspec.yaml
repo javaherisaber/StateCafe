@@ -14,8 +14,6 @@ dependencies:
     sdk: flutter
   intl: ^0.17.0
   rxdart: ^0.27.0
-  cached_network_image: ^3.2.1
-  flutter_svg: ^0.22.0
   lifecycle_aware_state: ^0.0.2
   touch_mouse_behavior: ^0.0.1
   shared_preferences: ^2.0.15
@@ -23,6 +21,7 @@ dependencies:
   fluttertoast: ^8.0.9
   flutter_bloc: ^8.1.1
   equatable: ^2.0.3
+  imager: ^1.0.0
 
 dev_dependencies:
   flutter_test:

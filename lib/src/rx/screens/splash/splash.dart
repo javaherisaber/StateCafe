@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:imager/imager.dart';
 import 'package:state_cafe/base/first_class_functions.dart';
 import 'package:state_cafe/base/resourceful_state.dart';
 import 'package:state_cafe/src/rx/routes.dart';
 import 'package:state_cafe/src/rx/screens/splash/bloc.dart';
-import 'package:state_cafe/utils/image.dart';
 import 'package:state_cafe/widgets/sized_box/space.dart';
 
 class SplashPage extends StatefulWidget {
@@ -53,7 +53,7 @@ class _SplashPageState extends ResourcefulState<SplashPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ImageUtils.fromLocal('assets/app_icon.png', width: 164),
+            Imager.fromLocal('assets/app_icon.png', width: 164),
             const Space(height: 16),
             Text(tr.appName, style: tp.headline4),
             const Space(height: 56),

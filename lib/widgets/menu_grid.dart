@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../utils/image.dart';
+import 'package:imager/imager.dart';
 
 class MenuGrid extends StatelessWidget {
   const MenuGrid({super.key, required this.name});
@@ -29,7 +28,7 @@ class MenuGrid extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
       child: Column(
         children: [
-          ImageUtils.fromLocal('assets/app_icon.png', height: 80),
+          Imager.fromLocal('assets/app_icon.png', height: 80),
           Text(name),
         ],
       ),
