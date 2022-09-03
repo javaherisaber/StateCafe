@@ -36,6 +36,7 @@ class SettingsBloc {
   }
 
   void onLogoutAlertPositiveClick() {
+    AppSharedPreferences.setIsLoggedIn(false);
     _navigateToLoginPage.fire();
   }
 

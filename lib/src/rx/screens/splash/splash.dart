@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:imager/imager.dart';
-import 'package:state_cafe/base/first_class_functions.dart';
 import 'package:state_cafe/base/resourceful_state.dart';
 import 'package:state_cafe/src/rx/routes.dart';
 import 'package:state_cafe/src/rx/screens/splash/bloc.dart';
-import 'package:state_cafe/widgets/sized_box/space.dart';
+import 'package:state_cafe/widgets/view/splash.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -48,19 +46,6 @@ class _SplashPageState extends ResourcefulState<SplashPage> {
   @override
   Widget build(BuildContext context) {
     super.build(context);
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Imager.fromLocal('assets/app_icon.png', width: 164),
-            const Space(height: 16),
-            Text(tr.appName, style: tp.headline4),
-            const Space(height: 56),
-            Text('${tr.author}: ${tr.myName}', style: tp.bodyText2),
-          ],
-        ),
-      ),
-    );
+    return const SplashView();
   }
 }

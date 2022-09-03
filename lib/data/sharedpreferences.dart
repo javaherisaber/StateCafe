@@ -1,16 +1,12 @@
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:state_cafe/themes/locale.dart';
 
 class AppSharedPreferences {
-  static SharedPreferences? _instance;
+  static SharedPreferences? __instance;
 
   static Future<SharedPreferences> get _preference async {
-    _instance ??= await SharedPreferences.getInstance();
-    return _instance!;
-  }
-
-  static Future<String?> _getNullableString(String key) async {
-    final result = (await _preference).getString(key);
-    return result == _nullString ? null : result;
+    __instance ??= await SharedPreferences.getInstance();
+    return __instance!;
   }
 
   static Future<bool> get isLoggedIn async {
@@ -29,9 +25,18 @@ class AppSharedPreferences {
     (await _preference).setString(_keyPreferredDrink, value);
   }
 
+  /// Warning: do not use this method to get locale, use [AppLocale.currentLocale] instead
+  static Future<String> get localeCode async {
+    return (await _preference).getString(_keyLocaleCode) ??
+        AppLocale.defaultLocale.languageCode;
+  }
+
+  /// Warning: do not use this method to change locale, use [AppLocale.setCurrentLocale] instead
+  static Future<void> setLocaleCode(String value) async {
+    (await _preference).setString(_keyLocaleCode, value);
+  }
+
   static const _keyIsLoggedIn = 'isLoggedIn';
   static const _keyPreferredDrink = 'preferredDrink';
-
-  /// We must use non-nullable string in shared preferences, so we use 'null' to indicate as such
-  static const _nullString = 'null';
+  static const _keyLocaleCode = 'localeCode';
 }

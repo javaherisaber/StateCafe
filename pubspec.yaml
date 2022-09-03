@@ -19,6 +19,7 @@ dependencies:
   shared_preferences: ^2.0.15
   live_event: ^0.0.2
   fluttertoast: ^8.0.9
+  bloc: ^8.1.0
   flutter_bloc: ^8.1.1
   equatable: ^2.0.3
   imager: ^1.0.0
