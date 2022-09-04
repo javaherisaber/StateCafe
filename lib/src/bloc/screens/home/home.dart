@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:state_cafe/base/bottom_nav_page.dart';
 import 'package:state_cafe/base/first_class_functions.dart';
+import 'package:state_cafe/base/resourceful_state.dart';
+import 'package:state_cafe/data/repository.dart';
 import 'package:state_cafe/src/bloc/routes.dart';
 import 'package:state_cafe/src/bloc/screens/home/home_bloc.dart';
 import 'package:state_cafe/themes/icons.dart';
@@ -14,12 +15,29 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => HomeBloc(),
-      child: scaffold(),
+      create: (_) => HomeBloc(repository: RepositoryImpl()),
+      child: const HomePageContent(),
     );
   }
+}
 
-  Widget scaffold() {
+class HomePageContent extends StatefulWidget {
+  const HomePageContent({super.key});
+
+  @override
+  State<HomePageContent> createState() => _HomePageContentState();
+}
+
+class _HomePageContentState extends ResourcefulState<HomePageContent> {
+  @override
+  void onReady() {
+    super.onReady();
+    context.read<HomeBloc>().add(const HomeOnReady());
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    super.build(context);
     return BlocBuilder<HomeBloc, HomeState>(
       builder: (context, state) {
         return Scaffold(
@@ -43,28 +61,23 @@ class HomePage extends StatelessWidget {
   Widget content() {
     return BlocBuilder<HomeBloc, HomeState>(
       builder: (context, state) {
-        final navPage = state.bottomNavPage;
-        switch (navPage) {
-          case HomeBottomNavPage.coffee:
-            return DrinkView(drinkName: tr.coffee);
-          case HomeBottomNavPage.tea:
-            return DrinkView(drinkName: tr.tea);
-          case HomeBottomNavPage.juice:
-            return DrinkView(drinkName: tr.juice);
-          default:
-            return error('No page found for index ${navPage.name}');
+        if (state is! HomeLoaded) {
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
         }
+        return DrinkView(drinks: state.drinks);
       },
     );
   }
 
   Widget bottomNav() {
     return BlocBuilder<HomeBloc, HomeState>(builder: (context, state) {
-      final navPage = state.bottomNavPage;
+      var navPage = state.bottomNavPage;
       return BottomNavigationBar(
         selectedLabelStyle: tp.bodyText2,
         unselectedLabelStyle: tp.bodyText1,
-        currentIndex: navPage.indexOfNav(),
+        currentIndex: navPage.index,
         onTap: (int index) {
           context.read<HomeBloc>().add(HomeBottomNavItemSelected(index));
         },

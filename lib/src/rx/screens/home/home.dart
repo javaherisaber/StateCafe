@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:state_cafe/base/first_class_functions.dart';
+import 'package:state_cafe/data/drink_data.dart';
+import 'package:state_cafe/data/drink_type.dart';
+import 'package:state_cafe/data/repository.dart';
 import 'package:state_cafe/src/rx/routes.dart';
 import 'package:state_cafe/src/rx/screens/home/bloc.dart';
-import 'package:state_cafe/base/bottom_nav_page.dart';
 import 'package:state_cafe/themes/icons.dart';
 import 'package:state_cafe/widgets/sized_box/empty_box.dart';
 import 'package:state_cafe/widgets/view/drink.dart';
@@ -20,7 +22,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    bloc = HomeBloc();
+    bloc = HomeBloc(repository: RepositoryImpl());
     super.initState();
   }
 
@@ -43,29 +45,22 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget content() {
-    return StreamBuilder<HomeBottomNavPage>(
-      stream: bloc.bottomNavPage,
+    return StreamBuilder<List<DrinkData>>(
+      stream: bloc.drinks,
       builder: (context, snapshot) {
-        final navPage = snapshot.data;
-        if (navPage == null) {
-          return const EmptyBox();
+        final drinks = snapshot.data;
+        if (drinks == null || drinks.isEmpty) {
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
         }
-        switch (navPage) {
-          case HomeBottomNavPage.coffee:
-            return DrinkView(drinkName: tr.coffee);
-          case HomeBottomNavPage.tea:
-            return DrinkView(drinkName: tr.tea);
-          case HomeBottomNavPage.juice:
-            return DrinkView(drinkName: tr.juice);
-          default:
-            return error('No page found for index ${navPage.name}');
-        }
+        return DrinkView(drinks: drinks);
       },
     );
   }
 
   Widget bottomNav() {
-    return StreamBuilder<HomeBottomNavPage>(
+    return StreamBuilder<DrinkType>(
       stream: bloc.bottomNavPage,
       builder: (context, snapshot) {
         final navPage = snapshot.data;
@@ -75,7 +70,7 @@ class _HomePageState extends State<HomePage> {
         return BottomNavigationBar(
           selectedLabelStyle: tp.bodyText2,
           unselectedLabelStyle: tp.bodyText1,
-          currentIndex: navPage.indexOfNav(),
+          currentIndex: navPage.index,
           onTap: (int index) {
             bloc.onBottomNavItemSelected(index);
           },

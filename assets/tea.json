@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "Green Tea",
+    "fileName": "assets/tea/1_green.jpg",
+    "description": "Green tea is the most popular tea globally. It’s unoxidized and has less caffeine than black tea. Camellia sinensis leaves are picked, dried, and heat-treated to prevent oxidation. In China, people often pan-fire leaves, which creates a duller green color. In Japan, people will typically steam them and achieve a brighter green shade. Due to its composition, green tea has a multitude of health benefits for fighting viruses and preventing future health issues.\n\nFlavor Profile of Green Tea: vegetal/grassy, earthy, bright\n\nPopular Varieties of Green Tea: Matcha, Sencha, Gunpowder Green tea, Dragonwell (Longjing) green tea"
+  },
+  {
+    "id": 2,
+    "name": "Chai Tea",
+    "fileName": "assets/tea/2_chai.jpg",
+    "description": "Originating in India, chai tea is brewed with Camellia sinensis assamica leaves. Though it’s technically a black tea, chai tea has a specific flavor profile and preparation process that differentiates it. It’s typically brewed with warm milk, sugar, and aromatic spices like ginger and cinnamon. Like many black teas, it contains caffeine.\n\nFlavor Profile of Chai Tea: largely depends on the ingredients used, but tends to have a spicy and sweet flavor\n\nPopular Varieties of Chai Tea: Masala chai, Adrak (ginger) chai, Elaichi (cardamom) chai, Tulsi chai"
+  },
+  {
+    "id": 3,
+    "name": "Oolong Tea",
+    "fileName": "assets/tea/3_oolong.jpg",
+    "description": "Oolong, or Wulong, tea is semi-oxidized and picked later in the season than green tea. The leaves come from the Camellia sinensis plant and are bruised by being tossed or shaken in baskets, which changes the oxidation process. They're heat-treated to stop oxidation, which can vary based on region and create different flavors. While oolong tea has less caffeine than black tea, it has more caffeine than green tea.\n\nFlavor Profile of Oolong Tea: ranges from light and fragrant to dark and full-bodied depending on the oxidation level\n\nPopular Varieties of White Tea: Ti Kuan Yin (Iron Goddess of Mercy) and Dan Cong (Phoenix Tea)"
+  },
+  {
+    "id": 4,
+    "name": "Matcha Tea",
+    "fileName": "assets/tea/4_matcha.jpg",
+    "description": "Matcha tea is brewed from ground-up green tea leaves, forming a powdery substance. Then, the powder is whisked with hot water to make the tea. Due to the high chlorophyll content of the powder, matcha tea contains a lot of nutrients and health benefits, including helping prevent heart disease. Due to how matcha is made, it contains more caffeine than regular green tea.\n\nFlavor Profile of Matcha Tea: smooth or grainy, depending on the quality, slightly sweet, earthy\n\nPopular Varieties of Matcha Tea: Ceremonial matcha, Culinary matcha"
+  },
+  {
+    "id": 5,
+    "name": "Black Tea",
+    "fileName": "assets/tea/5_black.jpg",
+    "description": "Black tea, or red tea in China, is one of the most popular tea flavors and is fully oxidized. The leaves of the Camellia sinensis plant are withered, rolled, oxidized, and dried or fired to produce a strong, full-bodied flavor. Assam, Darjeeling, Nilgiri, and Sri Lanka are a few well-known black tea-producing regions, and the flavor will vary based on the region and type of black tea. It has the most caffeine of all the different tea types.\n\nFlavor Profile of Black Tea: malty, full-bodied, strong\n\nPopular Varieties of Black Tea: Assam tea, Darjeeling tea, Earl Grey tea, and English Breakfast tea"
+  },
+  {
+    "id": 6,
+    "name": "Green Tea",
+    "fileName": "assets/tea/1_green.jpg",
+    "description": "Green tea is the most popular tea globally. It’s unoxidized and has less caffeine than black tea. Camellia sinensis leaves are picked, dried, and heat-treated to prevent oxidation. In China, people often pan-fire leaves, which creates a duller green color. In Japan, people will typically steam them and achieve a brighter green shade. Due to its composition, green tea has a multitude of health benefits for fighting viruses and preventing future health issues.\n\nFlavor Profile of Green Tea: vegetal/grassy, earthy, bright\n\nPopular Varieties of Green Tea: Matcha, Sencha, Gunpowder Green tea, Dragonwell (Longjing) green tea"
+  },
+  {
+    "id": 7,
+    "name": "Chai Tea",
+    "fileName": "assets/tea/2_chai.jpg",
+    "description": "Originating in India, chai tea is brewed with Camellia sinensis assamica leaves. Though it’s technically a black tea, chai tea has a specific flavor profile and preparation process that differentiates it. It’s typically brewed with warm milk, sugar, and aromatic spices like ginger and cinnamon. Like many black teas, it contains caffeine.\n\nFlavor Profile of Chai Tea: largely depends on the ingredients used, but tends to have a spicy and sweet flavor\n\nPopular Varieties of Chai Tea: Masala chai, Adrak (ginger) chai, Elaichi (cardamom) chai, Tulsi chai"
+  },
+  {
+    "id": 8,
+    "name": "Oolong Tea",
+    "fileName": "assets/tea/3_oolong.jpg",
+    "description": "Oolong, or Wulong, tea is semi-oxidized and picked later in the season than green tea. The leaves come from the Camellia sinensis plant and are bruised by being tossed or shaken in baskets, which changes the oxidation process. They're heat-treated to stop oxidation, which can vary based on region and create different flavors. While oolong tea has less caffeine than black tea, it has more caffeine than green tea.\n\nFlavor Profile of Oolong Tea: ranges from light and fragrant to dark and full-bodied depending on the oxidation level\n\nPopular Varieties of White Tea: Ti Kuan Yin (Iron Goddess of Mercy) and Dan Cong (Phoenix Tea)"
+  },
+  {
+    "id": 9,
+    "name": "Matcha Tea",
+    "fileName": "assets/tea/4_matcha.jpg",
+    "description": "Matcha tea is brewed from ground-up green tea leaves, forming a powdery substance. Then, the powder is whisked with hot water to make the tea. Due to the high chlorophyll content of the powder, matcha tea contains a lot of nutrients and health benefits, including helping prevent heart disease. Due to how matcha is made, it contains more caffeine than regular green tea.\n\nFlavor Profile of Matcha Tea: smooth or grainy, depending on the quality, slightly sweet, earthy\n\nPopular Varieties of Matcha Tea: Ceremonial matcha, Culinary matcha"
+  },
+  {
+    "id": 10,
+    "name": "Black Tea",
+    "fileName": "assets/tea/5_black.jpg",
+    "description": "Black tea, or red tea in China, is one of the most popular tea flavors and is fully oxidized. The leaves of the Camellia sinensis plant are withered, rolled, oxidized, and dried or fired to produce a strong, full-bodied flavor. Assam, Darjeeling, Nilgiri, and Sri Lanka are a few well-known black tea-producing regions, and the flavor will vary based on the region and type of black tea. It has the most caffeine of all the different tea types.\n\nFlavor Profile of Black Tea: malty, full-bodied, strong\n\nPopular Varieties of Black Tea: Assam tea, Darjeeling tea, Earl Grey tea, and English Breakfast tea"
+  },
+  {
+    "id": 11,
+    "name": "Green Tea",
+    "fileName": "assets/tea/1_green.jpg",
+    "description": "Green tea is the most popular tea globally. It’s unoxidized and has less caffeine than black tea. Camellia sinensis leaves are picked, dried, and heat-treated to prevent oxidation. In China, people often pan-fire leaves, which creates a duller green color. In Japan, people will typically steam them and achieve a brighter green shade. Due to its composition, green tea has a multitude of health benefits for fighting viruses and preventing future health issues.\n\nFlavor Profile of Green Tea: vegetal/grassy, earthy, bright\n\nPopular Varieties of Green Tea: Matcha, Sencha, Gunpowder Green tea, Dragonwell (Longjing) green tea"
+  },
+  {
+    "id": 12,
+    "name": "Chai Tea",
+    "fileName": "assets/tea/2_chai.jpg",
+    "description": "Originating in India, chai tea is brewed with Camellia sinensis assamica leaves. Though it’s technically a black tea, chai tea has a specific flavor profile and preparation process that differentiates it. It’s typically brewed with warm milk, sugar, and aromatic spices like ginger and cinnamon. Like many black teas, it contains caffeine.\n\nFlavor Profile of Chai Tea: largely depends on the ingredients used, but tends to have a spicy and sweet flavor\n\nPopular Varieties of Chai Tea: Masala chai, Adrak (ginger) chai, Elaichi (cardamom) chai, Tulsi chai"
+  },
+  {
+    "id": 13,
+    "name": "Oolong Tea",
+    "fileName": "assets/tea/3_oolong.jpg",
+    "description": "Oolong, or Wulong, tea is semi-oxidized and picked later in the season than green tea. The leaves come from the Camellia sinensis plant and are bruised by being tossed or shaken in baskets, which changes the oxidation process. They're heat-treated to stop oxidation, which can vary based on region and create different flavors. While oolong tea has less caffeine than black tea, it has more caffeine than green tea.\n\nFlavor Profile of Oolong Tea: ranges from light and fragrant to dark and full-bodied depending on the oxidation level\n\nPopular Varieties of White Tea: Ti Kuan Yin (Iron Goddess of Mercy) and Dan Cong (Phoenix Tea)"
+  },
+  {
+    "id": 14,
+    "name": "Matcha Tea",
+    "fileName": "assets/tea/4_matcha.jpg",
+    "description": "Matcha tea is brewed from ground-up green tea leaves, forming a powdery substance. Then, the powder is whisked with hot water to make the tea. Due to the high chlorophyll content of the powder, matcha tea contains a lot of nutrients and health benefits, including helping prevent heart disease. Due to how matcha is made, it contains more caffeine than regular green tea.\n\nFlavor Profile of Matcha Tea: smooth or grainy, depending on the quality, slightly sweet, earthy\n\nPopular Varieties of Matcha Tea: Ceremonial matcha, Culinary matcha"
+  },
+  {
+    "id": 15,
+    "name": "Black Tea",
+    "fileName": "assets/tea/5_black.jpg",
+    "description": "Black tea, or red tea in China, is one of the most popular tea flavors and is fully oxidized. The leaves of the Camellia sinensis plant are withered, rolled, oxidized, and dried or fired to produce a strong, full-bodied flavor. Assam, Darjeeling, Nilgiri, and Sri Lanka are a few well-known black tea-producing regions, and the flavor will vary based on the region and type of black tea. It has the most caffeine of all the different tea types.\n\nFlavor Profile of Black Tea: malty, full-bodied, strong\n\nPopular Varieties of Black Tea: Assam tea, Darjeeling tea, Earl Grey tea, and English Breakfast tea"
+  },
+  {
+    "id": 16,
+    "name": "Green Tea",
+    "fileName": "assets/tea/1_green.jpg",
+    "description": "Green tea is the most popular tea globally. It’s unoxidized and has less caffeine than black tea. Camellia sinensis leaves are picked, dried, and heat-treated to prevent oxidation. In China, people often pan-fire leaves, which creates a duller green color. In Japan, people will typically steam them and achieve a brighter green shade. Due to its composition, green tea has a multitude of health benefits for fighting viruses and preventing future health issues.\n\nFlavor Profile of Green Tea: vegetal/grassy, earthy, bright\n\nPopular Varieties of Green Tea: Matcha, Sencha, Gunpowder Green tea, Dragonwell (Longjing) green tea"
+  },
+  {
+    "id": 17,
+    "name": "Chai Tea",
+    "fileName": "assets/tea/2_chai.jpg",
+    "description": "Originating in India, chai tea is brewed with Camellia sinensis assamica leaves. Though it’s technically a black tea, chai tea has a specific flavor profile and preparation process that differentiates it. It’s typically brewed with warm milk, sugar, and aromatic spices like ginger and cinnamon. Like many black teas, it contains caffeine.\n\nFlavor Profile of Chai Tea: largely depends on the ingredients used, but tends to have a spicy and sweet flavor\n\nPopular Varieties of Chai Tea: Masala chai, Adrak (ginger) chai, Elaichi (cardamom) chai, Tulsi chai"
+  },
+  {
+    "id": 18,
+    "name": "Oolong Tea",
+    "fileName": "assets/tea/3_oolong.jpg",
+    "description": "Oolong, or Wulong, tea is semi-oxidized and picked later in the season than green tea. The leaves come from the Camellia sinensis plant and are bruised by being tossed or shaken in baskets, which changes the oxidation process. They're heat-treated to stop oxidation, which can vary based on region and create different flavors. While oolong tea has less caffeine than black tea, it has more caffeine than green tea.\n\nFlavor Profile of Oolong Tea: ranges from light and fragrant to dark and full-bodied depending on the oxidation level\n\nPopular Varieties of White Tea: Ti Kuan Yin (Iron Goddess of Mercy) and Dan Cong (Phoenix Tea)"
+  },
+  {
+    "id": 19,
+    "name": "Matcha Tea",
+    "fileName": "assets/tea/4_matcha.jpg",
+    "description": "Matcha tea is brewed from ground-up green tea leaves, forming a powdery substance. Then, the powder is whisked with hot water to make the tea. Due to the high chlorophyll content of the powder, matcha tea contains a lot of nutrients and health benefits, including helping prevent heart disease. Due to how matcha is made, it contains more caffeine than regular green tea.\n\nFlavor Profile of Matcha Tea: smooth or grainy, depending on the quality, slightly sweet, earthy\n\nPopular Varieties of Matcha Tea: Ceremonial matcha, Culinary matcha"
+  },
+  {
+    "id": 20,
+    "name": "Black Tea",
+    "fileName": "assets/tea/5_black.jpg",
+    "description": "Black tea, or red tea in China, is one of the most popular tea flavors and is fully oxidized. The leaves of the Camellia sinensis plant are withered, rolled, oxidized, and dried or fired to produce a strong, full-bodied flavor. Assam, Darjeeling, Nilgiri, and Sri Lanka are a few well-known black tea-producing regions, and the flavor will vary based on the region and type of black tea. It has the most caffeine of all the different tea types.\n\nFlavor Profile of Black Tea: malty, full-bodied, strong\n\nPopular Varieties of Black Tea: Assam tea, Darjeeling tea, Earl Grey tea, and English Breakfast tea"
+  },
+  {
+    "id": 21,
+    "name": "Green Tea",
+    "fileName": "assets/tea/1_green.jpg",
+    "description": "Green tea is the most popular tea globally. It’s unoxidized and has less caffeine than black tea. Camellia sinensis leaves are picked, dried, and heat-treated to prevent oxidation. In China, people often pan-fire leaves, which creates a duller green color. In Japan, people will typically steam them and achieve a brighter green shade. Due to its composition, green tea has a multitude of health benefits for fighting viruses and preventing future health issues.\n\nFlavor Profile of Green Tea: vegetal/grassy, earthy, bright\n\nPopular Varieties of Green Tea: Matcha, Sencha, Gunpowder Green tea, Dragonwell (Longjing) green tea"
+  },
+  {
+    "id": 22,
+    "name": "Chai Tea",
+    "fileName": "assets/tea/2_chai.jpg",
+    "description": "Originating in India, chai tea is brewed with Camellia sinensis assamica leaves. Though it’s technically a black tea, chai tea has a specific flavor profile and preparation process that differentiates it. It’s typically brewed with warm milk, sugar, and aromatic spices like ginger and cinnamon. Like many black teas, it contains caffeine.\n\nFlavor Profile of Chai Tea: largely depends on the ingredients used, but tends to have a spicy and sweet flavor\n\nPopular Varieties of Chai Tea: Masala chai, Adrak (ginger) chai, Elaichi (cardamom) chai, Tulsi chai"
+  },
+  {
+    "id": 23,
+    "name": "Oolong Tea",
+    "fileName": "assets/tea/3_oolong.jpg",
+    "description": "Oolong, or Wulong, tea is semi-oxidized and picked later in the season than green tea. The leaves come from the Camellia sinensis plant and are bruised by being tossed or shaken in baskets, which changes the oxidation process. They're heat-treated to stop oxidation, which can vary based on region and create different flavors. While oolong tea has less caffeine than black tea, it has more caffeine than green tea.\n\nFlavor Profile of Oolong Tea: ranges from light and fragrant to dark and full-bodied depending on the oxidation level\n\nPopular Varieties of White Tea: Ti Kuan Yin (Iron Goddess of Mercy) and Dan Cong (Phoenix Tea)"
+  },
+  {
+    "id": 24,
+    "name": "Matcha Tea",
+    "fileName": "assets/tea/4_matcha.jpg",
+    "description": "Matcha tea is brewed from ground-up green tea leaves, forming a powdery substance. Then, the powder is whisked with hot water to make the tea. Due to the high chlorophyll content of the powder, matcha tea contains a lot of nutrients and health benefits, including helping prevent heart disease. Due to how matcha is made, it contains more caffeine than regular green tea.\n\nFlavor Profile of Matcha Tea: smooth or grainy, depending on the quality, slightly sweet, earthy\n\nPopular Varieties of Matcha Tea: Ceremonial matcha, Culinary matcha"
+  },
+  {
+    "id": 25,
+    "name": "Black Tea",
+    "fileName": "assets/tea/5_black.jpg",
+    "description": "Black tea, or red tea in China, is one of the most popular tea flavors and is fully oxidized. The leaves of the Camellia sinensis plant are withered, rolled, oxidized, and dried or fired to produce a strong, full-bodied flavor. Assam, Darjeeling, Nilgiri, and Sri Lanka are a few well-known black tea-producing regions, and the flavor will vary based on the region and type of black tea. It has the most caffeine of all the different tea types.\n\nFlavor Profile of Black Tea: malty, full-bodied, strong\n\nPopular Varieties of Black Tea: Assam tea, Darjeeling tea, Earl Grey tea, and English Breakfast tea"
+  },
+  {
+    "id": 26,
+    "name": "Green Tea",
+    "fileName": "assets/tea/1_green.jpg",
+    "description": "Green tea is the most popular tea globally. It’s unoxidized and has less caffeine than black tea. Camellia sinensis leaves are picked, dried, and heat-treated to prevent oxidation. In China, people often pan-fire leaves, which creates a duller green color. In Japan, people will typically steam them and achieve a brighter green shade. Due to its composition, green tea has a multitude of health benefits for fighting viruses and preventing future health issues.\n\nFlavor Profile of Green Tea: vegetal/grassy, earthy, bright\n\nPopular Varieties of Green Tea: Matcha, Sencha, Gunpowder Green tea, Dragonwell (Longjing) green tea"
+  },
+  {
+    "id": 27,
+    "name": "Chai Tea",
+    "fileName": "assets/tea/2_chai.jpg",
+    "description": "Originating in India, chai tea is brewed with Camellia sinensis assamica leaves. Though it’s technically a black tea, chai tea has a specific flavor profile and preparation process that differentiates it. It’s typically brewed with warm milk, sugar, and aromatic spices like ginger and cinnamon. Like many black teas, it contains caffeine.\n\nFlavor Profile of Chai Tea: largely depends on the ingredients used, but tends to have a spicy and sweet flavor\n\nPopular Varieties of Chai Tea: Masala chai, Adrak (ginger) chai, Elaichi (cardamom) chai, Tulsi chai"
+  },
+  {
+    "id": 28,
+    "name": "Oolong Tea",
+    "fileName": "assets/tea/3_oolong.jpg",
+    "description": "Oolong, or Wulong, tea is semi-oxidized and picked later in the season than green tea. The leaves come from the Camellia sinensis plant and are bruised by being tossed or shaken in baskets, which changes the oxidation process. They're heat-treated to stop oxidation, which can vary based on region and create different flavors. While oolong tea has less caffeine than black tea, it has more caffeine than green tea.\n\nFlavor Profile of Oolong Tea: ranges from light and fragrant to dark and full-bodied depending on the oxidation level\n\nPopular Varieties of White Tea: Ti Kuan Yin (Iron Goddess of Mercy) and Dan Cong (Phoenix Tea)"
+  },
+  {
+    "id": 29,
+    "name": "Matcha Tea",
+    "fileName": "assets/tea/4_matcha.jpg",
+    "description": "Matcha tea is brewed from ground-up green tea leaves, forming a powdery substance. Then, the powder is whisked with hot water to make the tea. Due to the high chlorophyll content of the powder, matcha tea contains a lot of nutrients and health benefits, including helping prevent heart disease. Due to how matcha is made, it contains more caffeine than regular green tea.\n\nFlavor Profile of Matcha Tea: smooth or grainy, depending on the quality, slightly sweet, earthy\n\nPopular Varieties of Matcha Tea: Ceremonial matcha, Culinary matcha"
+  },
+  {
+    "id": 30,
+    "name": "Black Tea",
+    "fileName": "assets/tea/5_black.jpg",
+    "description": "Black tea, or red tea in China, is one of the most popular tea flavors and is fully oxidized. The leaves of the Camellia sinensis plant are withered, rolled, oxidized, and dried or fired to produce a strong, full-bodied flavor. Assam, Darjeeling, Nilgiri, and Sri Lanka are a few well-known black tea-producing regions, and the flavor will vary based on the region and type of black tea. It has the most caffeine of all the different tea types.\n\nFlavor Profile of Black Tea: malty, full-bodied, strong\n\nPopular Varieties of Black Tea: Assam tea, Darjeeling tea, Earl Grey tea, and English Breakfast tea"
+  },
+  {
+    "id": 31,
+    "name": "Green Tea",
+    "fileName": "assets/tea/1_green.jpg",
+    "description": "Green tea is the most popular tea globally. It’s unoxidized and has less caffeine than black tea. Camellia sinensis leaves are picked, dried, and heat-treated to prevent oxidation. In China, people often pan-fire leaves, which creates a duller green color. In Japan, people will typically steam them and achieve a brighter green shade. Due to its composition, green tea has a multitude of health benefits for fighting viruses and preventing future health issues.\n\nFlavor Profile of Green Tea: vegetal/grassy, earthy, bright\n\nPopular Varieties of Green Tea: Matcha, Sencha, Gunpowder Green tea, Dragonwell (Longjing) green tea"
+  },
+  {
+    "id": 32,
+    "name": "Chai Tea",
+    "fileName": "assets/tea/2_chai.jpg",
+    "description": "Originating in India, chai tea is brewed with Camellia sinensis assamica leaves. Though it’s technically a black tea, chai tea has a specific flavor profile and preparation process that differentiates it. It’s typically brewed with warm milk, sugar, and aromatic spices like ginger and cinnamon. Like many black teas, it contains caffeine.\n\nFlavor Profile of Chai Tea: largely depends on the ingredients used, but tends to have a spicy and sweet flavor\n\nPopular Varieties of Chai Tea: Masala chai, Adrak (ginger) chai, Elaichi (cardamom) chai, Tulsi chai"
+  },
+  {
+    "id": 33,
+    "name": "Oolong Tea",
+    "fileName": "assets/tea/3_oolong.jpg",
+    "description": "Oolong, or Wulong, tea is semi-oxidized and picked later in the season than green tea. The leaves come from the Camellia sinensis plant and are bruised by being tossed or shaken in baskets, which changes the oxidation process. They're heat-treated to stop oxidation, which can vary based on region and create different flavors. While oolong tea has less caffeine than black tea, it has more caffeine than green tea.\n\nFlavor Profile of Oolong Tea: ranges from light and fragrant to dark and full-bodied depending on the oxidation level\n\nPopular Varieties of White Tea: Ti Kuan Yin (Iron Goddess of Mercy) and Dan Cong (Phoenix Tea)"
+  },
+  {
+    "id": 34,
+    "name": "Matcha Tea",
+    "fileName": "assets/tea/4_matcha.jpg",
+    "description": "Matcha tea is brewed from ground-up green tea leaves, forming a powdery substance. Then, the powder is whisked with hot water to make the tea. Due to the high chlorophyll content of the powder, matcha tea contains a lot of nutrients and health benefits, including helping prevent heart disease. Due to how matcha is made, it contains more caffeine than regular green tea.\n\nFlavor Profile of Matcha Tea: smooth or grainy, depending on the quality, slightly sweet, earthy\n\nPopular Varieties of Matcha Tea: Ceremonial matcha, Culinary matcha"
+  },
+  {
+    "id": 35,
+    "name": "Black Tea",
+    "fileName": "assets/tea/5_black.jpg",
+    "description": "Black tea, or red tea in China, is one of the most popular tea flavors and is fully oxidized. The leaves of the Camellia sinensis plant are withered, rolled, oxidized, and dried or fired to produce a strong, full-bodied flavor. Assam, Darjeeling, Nilgiri, and Sri Lanka are a few well-known black tea-producing regions, and the flavor will vary based on the region and type of black tea. It has the most caffeine of all the different tea types.\n\nFlavor Profile of Black Tea: malty, full-bodied, strong\n\nPopular Varieties of Black Tea: Assam tea, Darjeeling tea, Earl Grey tea, and English Breakfast tea"
+  },
+  {
+    "id": 36,
+    "name": "Green Tea",
+    "fileName": "assets/tea/1_green.jpg",
+    "description": "Green tea is the most popular tea globally. It’s unoxidized and has less caffeine than black tea. Camellia sinensis leaves are picked, dried, and heat-treated to prevent oxidation. In China, people often pan-fire leaves, which creates a duller green color. In Japan, people will typically steam them and achieve a brighter green shade. Due to its composition, green tea has a multitude of health benefits for fighting viruses and preventing future health issues.\n\nFlavor Profile of Green Tea: vegetal/grassy, earthy, bright\n\nPopular Varieties of Green Tea: Matcha, Sencha, Gunpowder Green tea, Dragonwell (Longjing) green tea"
+  },
+  {
+    "id": 37,
+    "name": "Chai Tea",
+    "fileName": "assets/tea/2_chai.jpg",
+    "description": "Originating in India, chai tea is brewed with Camellia sinensis assamica leaves. Though it’s technically a black tea, chai tea has a specific flavor profile and preparation process that differentiates it. It’s typically brewed with warm milk, sugar, and aromatic spices like ginger and cinnamon. Like many black teas, it contains caffeine.\n\nFlavor Profile of Chai Tea: largely depends on the ingredients used, but tends to have a spicy and sweet flavor\n\nPopular Varieties of Chai Tea: Masala chai, Adrak (ginger) chai, Elaichi (cardamom) chai, Tulsi chai"
+  },
+  {
+    "id": 38,
+    "name": "Oolong Tea",
+    "fileName": "assets/tea/3_oolong.jpg",
+    "description": "Oolong, or Wulong, tea is semi-oxidized and picked later in the season than green tea. The leaves come from the Camellia sinensis plant and are bruised by being tossed or shaken in baskets, which changes the oxidation process. They're heat-treated to stop oxidation, which can vary based on region and create different flavors. While oolong tea has less caffeine than black tea, it has more caffeine than green tea.\n\nFlavor Profile of Oolong Tea: ranges from light and fragrant to dark and full-bodied depending on the oxidation level\n\nPopular Varieties of White Tea: Ti Kuan Yin (Iron Goddess of Mercy) and Dan Cong (Phoenix Tea)"
+  },
+  {
+    "id": 39,
+    "name": "Matcha Tea",
+    "fileName": "assets/tea/4_matcha.jpg",
+    "description": "Matcha tea is brewed from ground-up green tea leaves, forming a powdery substance. Then, the powder is whisked with hot water to make the tea. Due to the high chlorophyll content of the powder, matcha tea contains a lot of nutrients and health benefits, including helping prevent heart disease. Due to how matcha is made, it contains more caffeine than regular green tea.\n\nFlavor Profile of Matcha Tea: smooth or grainy, depending on the quality, slightly sweet, earthy\n\nPopular Varieties of Matcha Tea: Ceremonial matcha, Culinary matcha"
+  },
+  {
+    "id": 40,
+    "name": "Black Tea",
+    "fileName": "assets/tea/5_black.jpg",
+    "description": "Black tea, or red tea in China, is one of the most popular tea flavors and is fully oxidized. The leaves of the Camellia sinensis plant are withered, rolled, oxidized, and dried or fired to produce a strong, full-bodied flavor. Assam, Darjeeling, Nilgiri, and Sri Lanka are a few well-known black tea-producing regions, and the flavor will vary based on the region and type of black tea. It has the most caffeine of all the different tea types.\n\nFlavor Profile of Black Tea: malty, full-bodied, strong\n\nPopular Varieties of Black Tea: Assam tea, Darjeeling tea, Earl Grey tea, and English Breakfast tea"
+  }
+]

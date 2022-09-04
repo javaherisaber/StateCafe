@@ -14,7 +14,7 @@ dependencies:
     sdk: flutter
   intl: ^0.17.0
   rxdart: ^0.27.0
-  lifecycle_aware_state: ^0.0.2
+  lifecycle_aware_state: ^0.0.4
   touch_mouse_behavior: ^0.0.1
   shared_preferences: ^2.0.15
   live_event: ^0.0.2
@@ -35,6 +35,9 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
+    - assets/coffee/
+    - assets/juice/
+    - assets/tea/
   fonts:
     - family: AppIcons
       fonts:

@@ -7,6 +7,10 @@ abstract class HomeEvent extends Equatable {
   List<Object> get props => [];
 }
 
+class HomeOnReady extends HomeEvent {
+  const HomeOnReady();
+}
+
 class HomeBottomNavItemSelected extends HomeEvent {
   const HomeBottomNavItemSelected(this.index);
 

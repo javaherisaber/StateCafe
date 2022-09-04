@@ -1,13 +1,9 @@
 import 'package:state_cafe/base/first_class_functions.dart';
 
-enum HomeBottomNavPage {
+enum DrinkType {
   coffee,
   tea,
   juice;
-
-  int indexOfNav() {
-    return index;
-  }
 
   @override
   String toString() {
@@ -21,16 +17,16 @@ enum HomeBottomNavPage {
     }
   }
 
-  static HomeBottomNavPage fromIndex(int index) {
-    const values = HomeBottomNavPage.values;
+  static DrinkType fromIndex(int index) {
+    const values = DrinkType.values;
     if (index < 0 || index >= values.length) {
       return error('No page found for index $index');
     }
     return values[index];
   }
 
-  static HomeBottomNavPage fromName(String name) {
-    const values = HomeBottomNavPage.values;
+  static DrinkType fromName(String name) {
+    const values = DrinkType.values;
     for (var element in values) {
       if (element.toString() == name) {
         return element;

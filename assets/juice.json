@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "Watermelon Lychee Granita",
+    "fileName": "assets/juice/1_watermelon.jpg",
+    "description": "A refreshing way to beat the heat. Throw in rsome watermelon pieces along with ginger, mint leaves, lemon and lychee topped with lots of ice!"
+  },
+  {
+    "id": 2,
+    "name": "Cool Kiwi Juice",
+    "fileName": "assets/juice/2_kiwi.jpg",
+    "description": "A tall glass of refreshing drink with cucumber, kiwi and the zing of Thai ginger"
+  },
+  {
+    "id": 3,
+    "name": "Aam Ras",
+    "fileName": "assets/juice/3_aam_ras.jpg",
+    "description": "The fruit of the summer shines its way into your glass. A lovely blend of mango pulp, lime juice and spices."
+  },
+  {
+    "id": 4,
+    "name": "Ananas Da Panna",
+    "fileName": "assets/juice/4_pineapple.jpg",
+    "description": "A twist to the popular mango drink, this recipe calls for fresh pineapple pulp which is blended with cumin powder, black salt and lime juice."
+  },
+  {
+    "id": 5,
+    "name": "Pomegranate Juice",
+    "fileName": "assets/juice/5_pomegranate.jpg",
+    "description": "Detox with this refreshing ayurvedic juice, packed with the goodness of beetroot and pomegranate. \nBeetroot is a cleanser in itself, when added with aloe vera and pomegranate this juice helps in building a strong immune system!"
+  },
+  {
+    "id": 6,
+    "name": "Watermelon Lychee Granita",
+    "fileName": "assets/juice/1_watermelon.jpg",
+    "description": "A refreshing way to beat the heat. Throw in rsome watermelon pieces along with ginger, mint leaves, lemon and lychee topped with lots of ice!"
+  },
+  {
+    "id": 7,
+    "name": "Cool Kiwi Juice",
+    "fileName": "assets/juice/2_kiwi.jpg",
+    "description": "A tall glass of refreshing drink with cucumber, kiwi and the zing of Thai ginger"
+  },
+  {
+    "id": 8,
+    "name": "Aam Ras",
+    "fileName": "assets/juice/3_aam_ras.jpg",
+    "description": "The fruit of the summer shines its way into your glass. A lovely blend of mango pulp, lime juice and spices."
+  },
+  {
+    "id": 9,
+    "name": "Ananas Da Panna",
+    "fileName": "assets/juice/4_pineapple.jpg",
+    "description": "A twist to the popular mango drink, this recipe calls for fresh pineapple pulp which is blended with cumin powder, black salt and lime juice."
+  },
+  {
+    "id": 10,
+    "name": "Pomegranate Juice",
+    "fileName": "assets/juice/5_pomegranate.jpg",
+    "description": "Detox with this refreshing ayurvedic juice, packed with the goodness of beetroot and pomegranate. \nBeetroot is a cleanser in itself, when added with aloe vera and pomegranate this juice helps in building a strong immune system!"
+  },
+  {
+    "id": 11,
+    "name": "Watermelon Lychee Granita",
+    "fileName": "assets/juice/1_watermelon.jpg",
+    "description": "A refreshing way to beat the heat. Throw in rsome watermelon pieces along with ginger, mint leaves, lemon and lychee topped with lots of ice!"
+  },
+  {
+    "id": 12,
+    "name": "Cool Kiwi Juice",
+    "fileName": "assets/juice/2_kiwi.jpg",
+    "description": "A tall glass of refreshing drink with cucumber, kiwi and the zing of Thai ginger"
+  },
+  {
+    "id": 13,
+    "name": "Aam Ras",
+    "fileName": "assets/juice/3_aam_ras.jpg",
+    "description": "The fruit of the summer shines its way into your glass. A lovely blend of mango pulp, lime juice and spices."
+  },
+  {
+    "id": 14,
+    "name": "Ananas Da Panna",
+    "fileName": "assets/juice/4_pineapple.jpg",
+    "description": "A twist to the popular mango drink, this recipe calls for fresh pineapple pulp which is blended with cumin powder, black salt and lime juice."
+  },
+  {
+    "id": 15,
+    "name": "Pomegranate Juice",
+    "fileName": "assets/juice/5_pomegranate.jpg",
+    "description": "Detox with this refreshing ayurvedic juice, packed with the goodness of beetroot and pomegranate. \nBeetroot is a cleanser in itself, when added with aloe vera and pomegranate this juice helps in building a strong immune system!"
+  },
+  {
+    "id": 16,
+    "name": "Watermelon Lychee Granita",
+    "fileName": "assets/juice/1_watermelon.jpg",
+    "description": "A refreshing way to beat the heat. Throw in rsome watermelon pieces along with ginger, mint leaves, lemon and lychee topped with lots of ice!"
+  },
+  {
+    "id": 17,
+    "name": "Cool Kiwi Juice",
+    "fileName": "assets/juice/2_kiwi.jpg",
+    "description": "A tall glass of refreshing drink with cucumber, kiwi and the zing of Thai ginger"
+  },
+  {
+    "id": 18,
+    "name": "Aam Ras",
+    "fileName": "assets/juice/3_aam_ras.jpg",
+    "description": "The fruit of the summer shines its way into your glass. A lovely blend of mango pulp, lime juice and spices."
+  },
+  {
+    "id": 19,
+    "name": "Ananas Da Panna",
+    "fileName": "assets/juice/4_pineapple.jpg",
+    "description": "A twist to the popular mango drink, this recipe calls for fresh pineapple pulp which is blended with cumin powder, black salt and lime juice."
+  },
+  {
+    "id": 20,
+    "name": "Pomegranate Juice",
+    "fileName": "assets/juice/5_pomegranate.jpg",
+    "description": "Detox with this refreshing ayurvedic juice, packed with the goodness of beetroot and pomegranate. \nBeetroot is a cleanser in itself, when added with aloe vera and pomegranate this juice helps in building a strong immune system!"
+  },
+  {
+    "id": 21,
+    "name": "Watermelon Lychee Granita",
+    "fileName": "assets/juice/1_watermelon.jpg",
+    "description": "A refreshing way to beat the heat. Throw in rsome watermelon pieces along with ginger, mint leaves, lemon and lychee topped with lots of ice!"
+  },
+  {
+    "id": 22,
+    "name": "Cool Kiwi Juice",
+    "fileName": "assets/juice/2_kiwi.jpg",
+    "description": "A tall glass of refreshing drink with cucumber, kiwi and the zing of Thai ginger"
+  },
+  {
+    "id": 23,
+    "name": "Aam Ras",
+    "fileName": "assets/juice/3_aam_ras.jpg",
+    "description": "The fruit of the summer shines its way into your glass. A lovely blend of mango pulp, lime juice and spices."
+  },
+  {
+    "id": 24,
+    "name": "Ananas Da Panna",
+    "fileName": "assets/juice/4_pineapple.jpg",
+    "description": "A twist to the popular mango drink, this recipe calls for fresh pineapple pulp which is blended with cumin powder, black salt and lime juice."
+  },
+  {
+    "id": 25,
+    "name": "Pomegranate Juice",
+    "fileName": "assets/juice/5_pomegranate.jpg",
+    "description": "Detox with this refreshing ayurvedic juice, packed with the goodness of beetroot and pomegranate. \nBeetroot is a cleanser in itself, when added with aloe vera and pomegranate this juice helps in building a strong immune system!"
+  },
+  {
+    "id": 26,
+    "name": "Watermelon Lychee Granita",
+    "fileName": "assets/juice/1_watermelon.jpg",
+    "description": "A refreshing way to beat the heat. Throw in rsome watermelon pieces along with ginger, mint leaves, lemon and lychee topped with lots of ice!"
+  },
+  {
+    "id": 27,
+    "name": "Cool Kiwi Juice",
+    "fileName": "assets/juice/2_kiwi.jpg",
+    "description": "A tall glass of refreshing drink with cucumber, kiwi and the zing of Thai ginger"
+  },
+  {
+    "id": 28,
+    "name": "Aam Ras",
+    "fileName": "assets/juice/3_aam_ras.jpg",
+    "description": "The fruit of the summer shines its way into your glass. A lovely blend of mango pulp, lime juice and spices."
+  },
+  {
+    "id": 29,
+    "name": "Ananas Da Panna",
+    "fileName": "assets/juice/4_pineapple.jpg",
+    "description": "A twist to the popular mango drink, this recipe calls for fresh pineapple pulp which is blended with cumin powder, black salt and lime juice."
+  },
+  {
+    "id": 30,
+    "name": "Pomegranate Juice",
+    "fileName": "assets/juice/5_pomegranate.jpg",
+    "description": "Detox with this refreshing ayurvedic juice, packed with the goodness of beetroot and pomegranate. \nBeetroot is a cleanser in itself, when added with aloe vera and pomegranate this juice helps in building a strong immune system!"
+  },
+  {
+    "id": 31,
+    "name": "Watermelon Lychee Granita",
+    "fileName": "assets/juice/1_watermelon.jpg",
+    "description": "A refreshing way to beat the heat. Throw in rsome watermelon pieces along with ginger, mint leaves, lemon and lychee topped with lots of ice!"
+  },
+  {
+    "id": 32,
+    "name": "Cool Kiwi Juice",
+    "fileName": "assets/juice/2_kiwi.jpg",
+    "description": "A tall glass of refreshing drink with cucumber, kiwi and the zing of Thai ginger"
+  },
+  {
+    "id": 33,
+    "name": "Aam Ras",
+    "fileName": "assets/juice/3_aam_ras.jpg",
+    "description": "The fruit of the summer shines its way into your glass. A lovely blend of mango pulp, lime juice and spices."
+  },
+  {
+    "id": 34,
+    "name": "Ananas Da Panna",
+    "fileName": "assets/juice/4_pineapple.jpg",
+    "description": "A twist to the popular mango drink, this recipe calls for fresh pineapple pulp which is blended with cumin powder, black salt and lime juice."
+  },
+  {
+    "id": 35,
+    "name": "Pomegranate Juice",
+    "fileName": "assets/juice/5_pomegranate.jpg",
+    "description": "Detox with this refreshing ayurvedic juice, packed with the goodness of beetroot and pomegranate. \nBeetroot is a cleanser in itself, when added with aloe vera and pomegranate this juice helps in building a strong immune system!"
+  },
+  {
+    "id": 36,
+    "name": "Watermelon Lychee Granita",
+    "fileName": "assets/juice/1_watermelon.jpg",
+    "description": "A refreshing way to beat the heat. Throw in rsome watermelon pieces along with ginger, mint leaves, lemon and lychee topped with lots of ice!"
+  },
+  {
+    "id": 37,
+    "name": "Cool Kiwi Juice",
+    "fileName": "assets/juice/2_kiwi.jpg",
+    "description": "A tall glass of refreshing drink with cucumber, kiwi and the zing of Thai ginger"
+  },
+  {
+    "id": 38,
+    "name": "Aam Ras",
+    "fileName": "assets/juice/3_aam_ras.jpg",
+    "description": "The fruit of the summer shines its way into your glass. A lovely blend of mango pulp, lime juice and spices."
+  },
+  {
+    "id": 39,
+    "name": "Ananas Da Panna",
+    "fileName": "assets/juice/4_pineapple.jpg",
+    "description": "A twist to the popular mango drink, this recipe calls for fresh pineapple pulp which is blended with cumin powder, black salt and lime juice."
+  },
+  {
+    "id": 40,
+    "name": "Pomegranate Juice",
+    "fileName": "assets/juice/5_pomegranate.jpg",
+    "description": "Detox with this refreshing ayurvedic juice, packed with the goodness of beetroot and pomegranate. \nBeetroot is a cleanser in itself, when added with aloe vera and pomegranate this juice helps in building a strong immune system!"
+  }
+]
