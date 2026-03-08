@@ -15,9 +15,9 @@ class SplashView extends StatelessWidget {
           children: [
             Imager.fromLocal('assets/app_icon.png', width: 164),
             const Space(height: 16),
-            Text(tr.appName, style: tp.headline4),
+            Text(tr.appName, style: tp.headlineMedium),
             const Space(height: 56),
-            Text('${tr.author}: ${tr.myName}', style: tp.bodyText2),
+            Text('${tr.author}: ${tr.myName}', style: tp.bodyMedium),
           ],
         ),
       ),

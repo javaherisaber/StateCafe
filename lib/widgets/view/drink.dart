@@ -37,14 +37,15 @@ class DrinkView extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
           child: Column(
             children: [
-              Imager.fromLocal(
-                drink.fileName,
-                height: 100,
-                fit: BoxFit.contain,
-                backOffSizing: false,
+              Expanded(
+                child: Imager.fromLocal(
+                  drink.fileName,
+                  fit: BoxFit.contain,
+                  backOffSizing: false,
+                ),
               ),
-              const Space(height: 16),
-              Text(drink.name)
+              const Space(height: 8),
+              Text(drink.name, textAlign: TextAlign.center, maxLines: 2, overflow: TextOverflow.ellipsis),
             ],
           ),
         ),

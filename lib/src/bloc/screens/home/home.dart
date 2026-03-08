@@ -75,8 +75,8 @@ class _HomePageContentState extends ResourcefulState<HomePageContent> {
     return BlocBuilder<HomeBloc, HomeState>(builder: (context, state) {
       var navPage = state.bottomNavPage;
       return BottomNavigationBar(
-        selectedLabelStyle: tp.bodyText2,
-        unselectedLabelStyle: tp.bodyText1,
+        selectedLabelStyle: tp.bodyMedium,
+        unselectedLabelStyle: tp.bodyLarge,
         currentIndex: navPage.index,
         onTap: (int index) {
           context.read<HomeBloc>().add(HomeBottomNavItemSelected(index));

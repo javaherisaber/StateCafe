@@ -68,8 +68,8 @@ class _HomePageState extends State<HomePage> {
           return const EmptyBox();
         }
         return BottomNavigationBar(
-          selectedLabelStyle: tp.bodyText2,
-          unselectedLabelStyle: tp.bodyText1,
+          selectedLabelStyle: tp.bodyMedium,
+          unselectedLabelStyle: tp.bodyLarge,
           currentIndex: navPage.index,
           onTap: (int index) {
             bloc.onBottomNavItemSelected(index);

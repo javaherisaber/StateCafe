@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:state_cafe/l10n/app_localizations.dart';
 import 'package:lifecycle_aware_state/lifecycle_aware_state.dart';
 import 'package:state_cafe/main.dart';
 import 'package:state_cafe/src/rx/app/provider.dart';
