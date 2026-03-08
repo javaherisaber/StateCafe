@@ -2,6 +2,9 @@
 
 A Flutter tutorial app that demonstrates **8 different state management approaches** side by side, all implementing the same UI and business logic. Compare how each approach handles reactive state, navigation side-effects, dependency injection, and app-level concerns like locale switching.
 
+## Live demo
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://buildtoapp.com/gh/state-cafe)
+
 ## Quick Start
 
 ```bash
